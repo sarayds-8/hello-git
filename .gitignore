@@ -1,0 +1,2 @@
+# Todo lo que añadamos aquí se ignorará por git
+**/.DS_Store # Asi no me aparecerá al ver el estado de los archivos
