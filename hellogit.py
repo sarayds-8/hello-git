@@ -76,6 +76,7 @@ git stash # se guardan los cambios sin hacer un commit. Un commit deberia ser al
 git stash list # Ver los cambios que tenemos guardados en el stash.
 git stash pop # Recuperar los cambios que tenemos guardados en el stash. Se eliminan los cambios del stash.
 git stash apply # Recuperar los cambios que tenemos guardados en el stash. Se mantienen los cambios en el stash.
+git stash drop # Eliminar los cambios que tenemos guardados en el stash. Se eliminan los cambios del stash.
 
 
 '''
