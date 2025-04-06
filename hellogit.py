@@ -65,8 +65,23 @@ git tag nombre_tag
 Los tag se suelen usar para señalar puntos importantes en el tiempo, como por ejemplo una version de un programa.
 Buena practica: todos en minuscula y sin espacios. Se pueden usar guiones bajos o guiones medios.
 
+------- RAMAS ------
+git branch nombre_rama # Crear una rama nueva. Se crea una copia del commit en el que estamos.
+git branch # Ver las ramas que tenemos. La rama en la que estamos es la que tiene un asterisco al lado.
+git switch nombre_rama # Cambiar de rama. Cambiamos a la rama que queramos.
+
+git merge nombre_rama # Unir una rama a la rama en la que estamos. Se unen los cambios de la rama que queremos a la rama en la que estamos.
+
+git stash # se guardan los cambios sin hacer un commit. Un commit deberia ser algo que este terminado y correcto.
+git stash list # Ver los cambios que tenemos guardados en el stash.
+git stash pop # Recuperar los cambios que tenemos guardados en el stash. Se eliminan los cambios del stash.
+git stash apply # Recuperar los cambios que tenemos guardados en el stash. Se mantienen los cambios en el stash.
+
 
 '''
 print('Hello Git')
 print('¿Que tal el curso?')
 # El codigo que creamos va a tener diferentes flujos , y cada rama (flujo) va a tener un nombre diferente
+print('quiero hacer un cambio que me lo marque como que no hay algo cambiado')
+print('no me marca que hay')
+
