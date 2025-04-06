@@ -87,10 +87,13 @@ git stash pop # Recuperar los cambios que tenemos guardados en el stash. Se elim
 git stash apply # Recuperar los cambios que tenemos guardados en el stash. Se mantienen los cambios en el stash.
 git stash drop # Eliminar los cambios que tenemos guardados en el stash. Se eliminan los cambios del stash.
 
-Cuando ya hemos hecho merge entre la nueva rama y la rama principal, podemos eliminar la rama nueva.
+Cuando ya hemos hecho merge entre la nueva rama y la rama principal, podemos eliminar la rama nueva. (podriamos volver a un commit de esa rama eliminada)
 git branch -d nombre_rama # Eliminar la rama nueva. Se eliminan los cambios de la rama nueva.
 
 --------- CONFLICTOS -----------
+Cuando tenemos un conflicto, git nos lo indica. Nos dice que hay un conflicto y nos dice en que archivo hay un conflicto.
+Antes de poder hacer cualquier cosa, tenemos que resolver el conflicto, para ello decidimos que cambios queremos mantener y cuales no.
+Añadimos los archivos a la zona de preparación (staging) y hacemos un commit indicando que hemos resuelto el conflicto.
 git diff nombre_rama # Ver los cambios que hay entre la rama en la que estamos y la rama que queremos comprobar.
 
 
