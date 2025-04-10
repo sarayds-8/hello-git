@@ -16,7 +16,7 @@ git status # Ver el estado de los archivos
 # aparece el fichero en el que estamos pero dice que no hay 'commits'. No tiene guardado el archivo de ninguna forma en git.
 # Ahora mismo estamos trabajando en local. No estamos trabajando en la nube.
 
------------ GUARDAR CAMBIOS EN GIT -----------
+----------- GUARDAR CAMBIOS EN GIT (COMMIT) -----------
 
 1º Añadir un archivo a la zona de preparación (staging):
 git add hellogit.py # Añadir un archivo a la zona de preparación. Aun no tengo commits, pero ya tenemos un archivo.
@@ -27,6 +27,9 @@ git commit # Guardar el archivo en git. Se crea un 'commit' que es un punto de g
 
 git commit -m "Mensaje" # Hacer un commit con un mensaje directamente
 # Cada commit tiene un identificador único. Es un código de 40 caracteres que identifica el commit.
+
+Se pueden eliminar commits, pero no es recomendable. Se pueden eliminar commits que no se han subido a la nube.
+Si se eliminan commits que ya se han subido a la nube, se pueden perder cambios y es un problema.
 
 ---------- ESTADO DE LOS ARCHIVOS -----------
 git log # Ver los commits que hemos hecho
